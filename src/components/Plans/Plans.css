@@ -1,0 +1,103 @@
+.programs-container{
+    position: relative;
+}
+
+.plans-blur-1{
+    width: 42rem;
+    height: 33rem;
+    top: 6rem;
+    left: 0;
+    position: absolute;
+}
+
+.plans-blur-2{
+    width: 42rem;
+    height: 33rem;
+    top: 6rem;
+    right: 0;
+    position: absolute;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-evenly;
+    margin:0 30px;
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    font-style: italic;
+    
+
+}
+
+.plans{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    padding: 20px;
+    margin: 30px 0;
+    position: relative;
+}
+
+
+
+
+.plans>:nth-child(2){
+    transform: scale(1.1);
+    background: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
+}
+
+.plan{
+    display: flex;
+    flex-direction: column;
+    background-color: #656565;
+    padding: 30px;
+    width: 240px;
+    gap: 32px;
+    
+    
+}
+
+.features{
+  color: white;
+}
+
+.feature>img{
+    height: 16px;
+    
+}
+
+.plan>:nth-child(2){
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.plan>:nth-child(3){
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+
+}
+
+.plan>svg{
+    height: 32px;
+    width: 32px;
+    fill: white;
+}
+
+.benefits{
+    color: white;
+    font-weight: bold;
+}
+
+.join{
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    border: none;
+    border-radius: 20px;
+}
+
+
