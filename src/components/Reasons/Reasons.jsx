@@ -57,6 +57,7 @@ const Reasons = () => {
 
 
     </div>
+    </div>
   )
 }
 

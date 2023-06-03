@@ -3,12 +3,31 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import{
+  BrowserRouter, Switch, Route, Link, Routes} from "react-router-dom";
+import MainScreen from './components/MainScreen/MainScreen';
+import Plans from './components/Plans/Plans';
+import Reasons from './components/Reasons/Reasons';
+import Testimonials from './components/Testimonials/Testimonials';
+
+  export default function routing() {
+    return (
+      <BrowserRouter >
+        <Routes>
+          <Route exact path="/" element={<MainScreen />}>
+            <Route index element={<MainScreen />} />
+            <Route path="Plans" element={<Plans />} />
+            <Route path="Why Us" element={<Reasons />} />
+            <Route path="Testimonials" element={<Testimonials />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    );
+  }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <App />
 );
 
 // If you want to start measuring performance in your app, pass a function

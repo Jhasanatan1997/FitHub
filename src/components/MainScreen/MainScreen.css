@@ -140,7 +140,6 @@
 .hero-image-back{
     position: absolute;
     height: 350px;
-    right:200px ;
     top: 80px;
     width: 265px;
     z-index: -1;
@@ -187,5 +186,6 @@
     width: 32rem;
     height: 40rem;
 }
+
 
 
